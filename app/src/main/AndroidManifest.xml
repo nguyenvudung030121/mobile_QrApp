@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.qrapp">
+
+    <uses-feature android:name="android.hardware.camera.any" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.QrApp"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".HistoryEmployeeCheckoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HistoryEmployeeCheckinActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HistoryCheckoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HistoryCheckinActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UpdateEmployeeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddEmployeeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EmployeeManagerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".scannerQRview"
+            android:exported="true" />
+        <activity
+            android:name=".acceptScanner"
+            android:exported="true" />
+        <activity
+            android:name=".updateInfomation_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".homepage_Employee"
+            android:exported="true" />
+        <activity
+            android:name=".homePage"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".login_Activity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CaptureAct"
+            android:screenOrientation="fullSensor"
+            android:stateNotNeeded="true"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+    </application>
+
+</manifest>
